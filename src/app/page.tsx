@@ -1,8 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import Header from "./components/header";
-import Hero from "./components/hero";
 import Main from "./pages/home/page";
 export default function Home() {
   // ESlint yes rules hain iska mtlb ye k ap k code ka error bta deta hy
