@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.back{
+    background-image: url('images/gen.jpg');
+  /* background-size: cover;
+  background-position: center;
+  height: 100vh; */
+}
+.animated-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height viewport */
+  padding-bottom: 200px;
+}
+
+.animated-text {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: rgb(10, 95, 145);
+  animation: fadeInUp 2s ease-out, slideIn 3s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
